@@ -1,0 +1,46 @@
+{
+    "name": "andreshg112/laravel-auditing-notifications",
+    "description": "A notifications driver for the owen-it/laravel-auditing package. Allows sending notifications with audit data through custom channels.",
+    "keywords": [
+        "andreshg112",
+        "laravel-auditing-notifications"
+    ],
+    "homepage": "https://github.com/andreshg112/laravel-auditing-notifications",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Andrés Herrera García",
+            "email": "andreshg112@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.*",
+        "lab123/aws-sns": "dev-master",
+        "owen-it/laravel-auditing": "^8.0"
+    },
+    "require-dev": {
+        "codedungeon/phpunit-result-printer": "^0.26.1",
+        "orchestra/testbench": "^3.5",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Andreshg112\\LaravelAuditingNotifications\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Andreshg112\\LaravelAuditingNotifications\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
