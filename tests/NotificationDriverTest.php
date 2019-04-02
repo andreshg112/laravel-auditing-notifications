@@ -60,8 +60,10 @@ class AuditableModel extends \Illuminate\Database\Eloquent\Model implements \Owe
     }
 
     protected function resolveUser()
-    { }
+    {
+    }
 
     protected function resolveUserAgent()
-    { }
+    {
+    }
 }
