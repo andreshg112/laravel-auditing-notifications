@@ -38,8 +38,7 @@ class NotificationDriverTest extends TestCase
     }
 }
 
-class AuditableModel extends \Illuminate\Database\Eloquent\Model
-implements \OwenIt\Auditing\Contracts\Auditable
+class AuditableModel extends \Illuminate\Database\Eloquent\Model implements \OwenIt\Auditing\Contracts\Auditable
 {
     use \OwenIt\Auditing\Auditable, \Illuminate\Notifications\Notifiable;
 
@@ -50,23 +49,21 @@ implements \OwenIt\Auditing\Contracts\Auditable
         return true;
     }
 
-    function resolveIpAddress(): string
+    public function resolveIpAddress(): string
     {
         return '';
     }
 
-    function resolveUrl(): string
+    public function resolveUrl(): string
     {
         return '';
     }
 
     protected function resolveUser()
     {
-        return null;
     }
 
-    function resolveUserAgent()
+    public function resolveUserAgent()
     {
-        return null;
     }
 }
