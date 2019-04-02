@@ -1,8 +1,10 @@
 # Very short description of the package
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/andreshg112/laravel-auditing-notifications.svg?style=flat-square)](https://packagist.org/packages/andreshg112/laravel-auditing-notifications)
-[![Build Status](https://img.shields.io/travis/andreshg112/laravel-auditing-notifications/master.svg?style=flat-square)](https://travis-ci.org/andreshg112/laravel-auditing-notifications)
-[![Quality Score](https://img.shields.io/scrutinizer/g/andreshg112/laravel-auditing-notifications.svg?style=flat-square)](https://scrutinizer-ci.com/g/andreshg112/laravel-auditing-notifications)
+[![Build Status](https://travis-ci.com/andreshg112/laravel-auditing-notifications.svg?branch=master)](https://travis-ci.com/andreshg112/laravel-auditing-notifications)
+[![StyleCI](https://github.styleci.io/repos/178957162/shield?branch=master)](https://github.styleci.io/repos/178957162)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/andreshg112/laravel-auditing-notifications/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/andreshg112/laravel-auditing-notifications/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/andreshg112/laravel-auditing-notifications/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/andreshg112/laravel-auditing-notifications/?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/andreshg112/laravel-auditing-notifications.svg?style=flat-square)](https://packagist.org/packages/andreshg112/laravel-auditing-notifications)
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
@@ -17,13 +19,13 @@ composer require andreshg112/laravel-auditing-notifications
 
 ## Usage
 
-``` php
+```php
 // Usage description here
 ```
 
 ### Testing
 
-``` bash
+```bash
 composer test
 ```
 
@@ -41,8 +43,8 @@ If you discover any security related issues, please email andreshg112@gmail.com 
 
 ## Credits
 
-- [Andrés Herrera García](https://github.com/andreshg112)
-- [All Contributors](../../contributors)
+-   [Andrés Herrera García](https://github.com/andreshg112)
+-   [All Contributors](../../contributors)
 
 ## License
 

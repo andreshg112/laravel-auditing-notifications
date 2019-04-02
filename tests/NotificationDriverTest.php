@@ -49,21 +49,19 @@ class AuditableModel extends \Illuminate\Database\Eloquent\Model implements \Owe
         return true;
     }
 
-    public function resolveIpAddress(): string
+    protected function resolveIpAddress(): string
     {
         return '';
     }
 
-    public function resolveUrl(): string
+    protected function resolveUrl(): string
     {
         return '';
     }
 
     protected function resolveUser()
-    {
-    }
+    { }
 
-    public function resolveUserAgent()
-    {
-    }
+    protected function resolveUserAgent()
+    { }
 }

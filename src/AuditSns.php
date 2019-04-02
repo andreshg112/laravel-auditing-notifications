@@ -3,7 +3,6 @@
 namespace Andreshg112\LaravelAuditingNotifications;
 
 use Illuminate\Bus\Queueable;
-use function GuzzleHttp\json_encode;
 use Illuminate\Support\Facades\Config;
 use Lab123\AwsSns\Messages\AwsSnsMessage;
 use Illuminate\Notifications\Notification;
