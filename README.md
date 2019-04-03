@@ -1,4 +1,4 @@
-# Notification Driver por [Laravel Auditing](http://laravel-auditing.com) ^8.0
+# Notification Driver for [Laravel Auditing](http://laravel-auditing.com) ^8.0
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/andreshg112/laravel-auditing-notifications.svg?style=flat-square)](https://packagist.org/packages/andreshg112/laravel-auditing-notifications)
 [![Build Status](https://travis-ci.com/andreshg112/laravel-auditing-notifications.svg?branch=master)](https://travis-ci.com/andreshg112/laravel-auditing-notifications)
