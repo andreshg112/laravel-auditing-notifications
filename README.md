@@ -23,7 +23,7 @@ You can install the package via composer:
 composer require andreshg112/laravel-auditing-notifications
 ```
 
-> This package depends on [owen-it/laravel-auditing ^8.0](https://github.com/owen-it/laravel-auditing) and [lab123it/aws-sns](https://github.com/lab123it/aws-sns), so you have to configure them first in order to make this work.
+> This package depends on [owen-it/laravel-auditing:^8.0](https://github.com/owen-it/laravel-auditing) and [lab123it/aws-sns:dev-master](https://github.com/lab123it/aws-sns), so you have to install and configure them first in order to make this work.
 
 ### Step 2
 
