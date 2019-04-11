@@ -12,7 +12,7 @@ class AuditSnsTest extends TestCase
     /** @test */
     public function it_returns_a_sns_message()
     {
-        /**
+        /*
          * You should not mock the Request facade. Instead, pass the input you desire into the HTTP
          * helper methods such as get and post when running your test. Likewise, instead of mocking
          * the Config facade, call the Config::set method in your tests.
