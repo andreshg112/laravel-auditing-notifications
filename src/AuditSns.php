@@ -2,7 +2,6 @@
 
 namespace Andreshg112\LaravelAuditingNotifications;
 
-use Illuminate\Bus\Queueable;
 use Illuminate\Support\Facades\Config;
 use Lab123\AwsSns\Messages\AwsSnsMessage;
 use Illuminate\Notifications\Notification;
@@ -11,8 +10,6 @@ use OwenIt\Auditing\Exceptions\AuditingException;
 
 class AuditSns extends Notification
 {
-    use Queueable;
-
     /** @var array $auditData */
     protected $auditData = null;
 
@@ -38,7 +35,7 @@ class AuditSns extends Notification
     }
 
     /**
-     * Get the mail representation of the notification.
+     * Get the SNS representation of the notification.
      *
      * @param  \OwenIt\Auditing\Contracts\Auditable  $notifiable
      * @return \Lab123\AwsSns\Messages\AwsSnsMessage

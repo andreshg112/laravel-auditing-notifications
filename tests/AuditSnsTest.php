@@ -12,7 +12,14 @@ class AuditSnsTest extends TestCase
     /** @test */
     public function it_returns_a_sns_message()
     {
-        $this->mockConfig();
+        /**
+         * You should not mock the Request facade. Instead, pass the input you desire into the HTTP
+         * helper methods such as get and post when running your test. Likewise, instead of mocking
+         * the Config facade, call the Config::set method in your tests.
+         *
+         * https://laravel.com/docs/5.6/mocking#mocking-facades
+         */
+        Config::set('audit.notification-driver.sns.topic_arn', 'topic:arn');
 
         $model = new AuditableModel;
 
@@ -23,39 +30,5 @@ class AuditSnsTest extends TestCase
         $snsMessage = $notification->toAwsSnsTopic($model);
 
         $this->assertInstanceOf(AwsSnsMessage::class, $snsMessage);
-    }
-
-    public function mockConfig()
-    {
-        $events = ['created', 'updated', 'deleted', 'restored'];
-
-        Config::shouldReceive('get')
-            ->with('audit.events', $events)
-            ->andReturn($events);
-
-        Config::shouldReceive('get')
-            ->with('audit.notification-driver.sns.topic_arn')
-            ->once()
-            ->andReturn('topic:arn');
-
-        Config::shouldReceive('get')
-            ->with('audit.console', false)
-            ->once()
-            ->andReturn(false);
-
-        Config::shouldReceive('get')
-            ->with('audit.strict', false)
-            ->once()
-            ->andReturn(false);
-
-        Config::shouldReceive('get')
-            ->with('audit.timestamps', false)
-            ->once()
-            ->andReturn(false);
-
-        Config::shouldReceive('get')
-            ->with('audit.user.morph_prefix', 'user')
-            ->once()
-            ->andReturn('user');
     }
 }

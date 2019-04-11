@@ -13,17 +13,22 @@ This package allows you to send notifications with audit data instead of saving 
 
 If you have some microservices and want to have centralized auditing, this could be helpful.
 
+## Requirements
+
+-   PHP >= 7.1
+-   Laravel >= 5.2 && < 5.8
+
 ## Installation
 
 ### Step 1
+
+> This package depends on [owen-it/laravel-auditing:^8.0](https://github.com/owen-it/laravel-auditing) and [lab123it/aws-sns:dev-master](https://github.com/lab123it/aws-sns), so you have to install and configure them first in order to make this work.
 
 You can install the package via composer:
 
 ```bash
 composer require andreshg112/laravel-auditing-notifications
 ```
-
-> This package depends on [owen-it/laravel-auditing:^8.0](https://github.com/owen-it/laravel-auditing) and [lab123it/aws-sns:dev-master](https://github.com/lab123it/aws-sns), so you have to install and configure them first in order to make this work.
 
 ### Step 2
 
@@ -61,6 +66,10 @@ return [
         // Required if you're going to use different notifications channels for sending audit data.
         'notifications' => [
             Andreshg112\LaravelAuditingNotifications\AuditSns::class,
+
+            // Or this if you want to queue the delivery of the message.
+            // https://laravel.com/docs/5.2/queues
+            // Andreshg112\LaravelAuditingNotifications\AuditSnsQueue::class,
         ],
 
         // Required if you're going to use the default Andreshg112\LaravelAuditingNotifications\AuditSns Notification.
