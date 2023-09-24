@@ -2,21 +2,21 @@
 
 namespace Andreshg112\LaravelAuditingNotifications;
 
-use Illuminate\Support\Facades\Config;
-use Lab123\AwsSns\Messages\AwsSnsMessage;
 use Illuminate\Notifications\Notification;
+use Illuminate\Support\Facades\Config;
 use Lab123\AwsSns\Channels\AwsSnsTopicChannel;
+use Lab123\AwsSns\Messages\AwsSnsMessage;
 use OwenIt\Auditing\Exceptions\AuditingException;
 
 class AuditSns extends Notification
 {
-    /** @var array $auditData */
+    /** @var array */
     protected $auditData = null;
 
     /**
      * Create a new notification instance.
      *
-     * @param array $auditData
+     * @param  array  $auditData
      */
     public function __construct(array $auditData)
     {

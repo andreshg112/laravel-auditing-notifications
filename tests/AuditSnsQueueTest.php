@@ -2,9 +2,9 @@
 
 namespace Andreshg112\LaravelAuditingNotifications\Tests;
 
-use Orchestra\Testbench\TestCase;
-use Illuminate\Support\Facades\Notification;
 use Andreshg112\LaravelAuditingNotifications\AuditSnsQueue;
+use Illuminate\Support\Facades\Notification;
+use Orchestra\Testbench\TestCase;
 
 class AuditSnsQueueTest extends TestCase
 {

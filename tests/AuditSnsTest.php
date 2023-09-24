@@ -2,10 +2,10 @@
 
 namespace Andreshg112\LaravelAuditingNotifications\Tests;
 
-use Orchestra\Testbench\TestCase;
+use Andreshg112\LaravelAuditingNotifications\AuditSns;
 use Illuminate\Support\Facades\Config;
 use Lab123\AwsSns\Messages\AwsSnsMessage;
-use Andreshg112\LaravelAuditingNotifications\AuditSns;
+use Orchestra\Testbench\TestCase;
 
 class AuditSnsTest extends TestCase
 {

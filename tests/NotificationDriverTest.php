@@ -2,10 +2,10 @@
 
 namespace Andreshg112\LaravelAuditingNotifications\Tests;
 
-use Orchestra\Testbench\TestCase;
-use OwenIt\Auditing\Models\Audit;
 use Andreshg112\LaravelAuditingNotifications\AuditSns;
 use Andreshg112\LaravelAuditingNotifications\NotificationDriver;
+use Orchestra\Testbench\TestCase;
+use OwenIt\Auditing\Models\Audit;
 
 class NotificationDriverTest extends TestCase
 {
