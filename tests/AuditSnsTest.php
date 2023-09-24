@@ -21,7 +21,7 @@ class AuditSnsTest extends TestCase
          */
         Config::set('audit.notification-driver.sns.topic_arn', 'topic:arn');
 
-        $model = new AuditableModel;
+        $model = new AuditableModel();
 
         $model->setAuditEvent('created');
 

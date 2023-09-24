@@ -13,7 +13,7 @@ class AuditSnsQueueTest extends TestCase
     {
         Notification::fake();
 
-        $model = new AuditableModel;
+        $model = new AuditableModel();
 
         $model->setAuditEvent('created');
 
