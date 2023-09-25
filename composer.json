@@ -16,9 +16,9 @@
         }
     ],
     "require": {
-        "php": "^7.1",
-        "illuminate/support": "5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.* || 5.8.*",
-        "lab123/aws-sns": "dev-master",
+        "php": "^7.2",
+        "andreshg112/aws-sns": "1.0.2",
+        "illuminate/support": "5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.* || 5.8.* || 6.* || 7.*",
         "owen-it/laravel-auditing": "^9.0"
     },
     "require-dev": {
@@ -43,5 +43,11 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "repositories": {
+        "andreshg112/aws-sns": {
+            "type": "vcs",
+            "url": "https://github.com/andreshg112/aws-sns.git"
+        }
     }
 }
